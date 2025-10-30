@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Painel do Doador - Doação de Sangue PB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A92323", // Vermelho/Vinho
+                        "secondary": "#4A90E2", // Azul Calmo
+                        "background": "#F4F7F9",
+                        "success": "#2E8B57",
+                        "warning": "#F5A623",
+                        "card": "#FFFFFF",
+                        "text-primary": "#111418",
+                        "text-secondary": "#617289",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px",
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background font-display text-text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-6 md:px-10 py-4 bg-card shadow-sm sticky top-0 z-10">
+<div class="flex items-center gap-4 text-text-primary">
+<div class="text-primary size-7">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-text-primary text-lg font-bold leading-tight tracking-[-0.015em]">Doação de Sangue PB</h2>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-text-primary text-sm font-medium leading-normal hover:text-primary" href="#">Início</a>
+<a class="text-text-secondary text-sm font-medium leading-normal hover:text-primary" href="#">Agendamentos</a>
+<a class="text-text-secondary text-sm font-medium leading-normal hover:text-primary" href="#">Histórico</a>
+<a class="text-text-secondary text-sm font-medium leading-normal hover:text-primary" href="#">Locais</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-gray-100 text-text-secondary hover:bg-gray-200">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="relative group">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer" data-alt="Foto de perfil do usuário, homem sorrindo com fundo neutro." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwnRcgQmjKU2XfK-mCw-JDHT8e5pZ83blUZJ1zLwaKooZbZLec2p3c9hB_iMIWoz5OPZnMriexrbdgDuYO6osr7GXdM3Jm3YAyj9MmeOkZcs9w4PHpeN6xFGrVoUQWZ0JzRZ6WqaeTmasHyl-GSwTHUszU259VhNFbGqO5xEEh71AS-iFrfWILg5FKqEvYN2qbr94o3QWjK_eQXWOH6buAXi7hR89KxXFc4C9jqWSdH8_TWGy_rOO9VW5oT8QtV7LK39D_kPRUD0L8");'></div>
+<div class="absolute right-0 mt-2 w-48 bg-card rounded-lg shadow-lg py-1 hidden group-hover:block">
+<a class="block px-4 py-2 text-sm text-text-secondary hover:bg-gray-100" href="#">Configurações</a>
+<a class="block px-4 py-2 text-sm text-text-secondary hover:bg-gray-100" href="#">Sair</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center p-4 sm:p-6 lg:p-10">
+<div class="layout-content-container flex flex-col w-full max-w-7xl">
+<div class="flex flex-wrap justify-between gap-4 mb-8">
+<div class="flex min-w-72 flex-col gap-1">
+<p class="text-text-primary text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Olá, João Silva!</p>
+<p class="text-text-secondary text-base font-normal leading-normal">Bem-vindo ao seu painel de doações.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Coluna Esquerda -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Card de Destaque -->
+<div class="p-0 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-sm bg-card">
+<div class="w-full bg-center bg-no-repeat aspect-[16/6] bg-cover" data-alt="Imagem abstrata com tons de vermelho e branco, representando o fluxo sanguíneo e a saúde." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpxdYLOxLTQpA1aVXvOcda4ybi9m5f6Z59fvKhos71yrTuJNY5AwtLoVeaKLLyeYOXEVPqlB0_Id2CpzPiVYq6tmksGH8cCBCE3ajJmrYWHk-6BKun8WGefnA-_j0nD13qh0lvZvc-txPFKY-58KGobHeKoyJyV65j7pQiz3Ufli_wDlpzZXSLFuqdw8SNKN-SxxyJUTrO6V8zAToz7x_mVmuLMaDYSAwPZnsWdGwsf6-o9Yg3oIHbtLqssfM9q7sipuQNor_QbUdZ");'></div>
+<div class="flex flex-col md:flex-row w-full items-start md:items-center justify-between gap-4 p-6">
+<div class="flex flex-col gap-1">
+<p class="text-success text-lg font-bold leading-tight tracking-[-0.015em]">Você pode doar!</p>
+<p class="text-text-secondary text-base font-normal leading-normal max-w-lg">Sua próxima doação pode salvar até 3 vidas. Encontre um local perto de você e agende hoje mesmo.</p>
+</div>
+<button class="flex w-full md:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold leading-normal hover:bg-opacity-90 transition-colors">
+<span class="truncate">Agendar Doação</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Estatísticas -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-card shadow-sm">
+<p class="text-text-secondary text-base font-medium leading-normal">Total de Doações</p>
+<p class="text-text-primary tracking-light text-3xl font-bold leading-tight">12</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-card shadow-sm">
+<p class="text-text-secondary text-base font-medium leading-normal">Vidas Salvas</p>
+<p class="text-text-primary tracking-light text-3xl font-bold leading-tight">36</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-card shadow-sm">
+<p class="text-text-secondary text-base font-medium leading-normal">Tipo Sanguíneo</p>
+<p class="text-primary tracking-light text-3xl font-bold leading-tight">O+</p>
+</div>
+</div>
+<!-- Histórico de Doações -->
+<div class="bg-card rounded-xl shadow-sm p-6 flex flex-col gap-4">
+<h2 class="text-text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Histórico de Doações</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-gray-200">
+<th class="py-2 px-4 text-sm font-semibold text-text-secondary">Data</th>
+<th class="py-2 px-4 text-sm font-semibold text-text-secondary">Local</th>
+<th class="py-2 px-4 text-sm font-semibold text-text-secondary">Tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-100">
+<td class="py-3 px-4 text-sm text-text-primary">15 de Mar, 2024</td>
+<td class="py-3 px-4 text-sm text-text-primary">Hemocentro de João Pessoa</td>
+<td class="py-3 px-4 text-sm text-text-primary">Sangue Total</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-3 px-4 text-sm text-text-primary">10 de Dez, 2023</td>
+<td class="py-3 px-4 text-sm text-text-primary">Hemocentro de Campina Grande</td>
+<td class="py-3 px-4 text-sm text-text-primary">Sangue Total</td>
+</tr>
+<tr>
+<td class="py-3 px-4 text-sm text-text-primary">05 de Ago, 2023</td>
+<td class="py-3 px-4 text-sm text-text-primary">Hemocentro de João Pessoa</td>
+<td class="py-3 px-4 text-sm text-text-primary">Plaquetas</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a class="text-secondary font-semibold text-sm self-start mt-2 hover:underline" href="#">Ver histórico completo</a>
+</div>
+</div>
+<!-- Coluna Direita -->
+<div class="lg:col-span-1 flex flex-col gap-6">
+<!-- Próximo Agendamento -->
+<div class="bg-card rounded-xl shadow-sm p-6 flex flex-col gap-4">
+<h2 class="text-text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Próximo Agendamento</h2>
+<div class="border border-gray-200 rounded-lg p-4 flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">calendar_month</span>
+<p class="text-text-primary font-semibold">25 de Julho, 2024 - 10:30</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<p class="text-text-secondary text-sm">Hemocentro de João Pessoa</p>
+</div>
+<a class="text-secondary text-sm font-semibold hover:underline flex items-center gap-1" href="#">
+                                        Ver no mapa <span class="material-symbols-outlined text-base">open_in_new</span>
+</a>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 flex min-w-0 max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-gray-100 text-text-secondary text-sm font-medium leading-normal hover:bg-gray-200">
+<span class="truncate">Remarcar</span>
+</button>
+<button class="flex-1 flex min-w-0 max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/10 text-primary text-sm font-medium leading-normal hover:bg-primary/20">
+<span class="truncate">Cancelar</span>
+</button>
+</div>
+</div>
+<!-- Conquistas -->
+<div class="bg-card rounded-xl shadow-sm p-6 flex flex-col gap-4">
+<h2 class="text-text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Suas Conquistas</h2>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="flex flex-col items-center gap-2">
+<div class="flex items-center justify-center size-16 bg-primary/10 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">bloodtype</span>
+</div>
+<p class="text-xs text-text-secondary font-medium">Primeira Doação</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex items-center justify-center size-16 bg-primary/10 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<p class="text-xs text-text-secondary font-medium">5 Doações</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex items-center justify-center size-16 bg-primary/10 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">military_tech</span>
+</div>
+<p class="text-xs text-text-secondary font-medium">10 Doações</p>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40">
+<div class="flex items-center justify-center size-16 bg-gray-200 rounded-full text-text-secondary">
+<span class="material-symbols-outlined text-3xl">star</span>
+</div>
+<p class="text-xs text-text-secondary font-medium">20 Doações</p>
+</div>
+</div>
+</div>
+<!-- Notícias -->
+<div class="bg-card rounded-xl shadow-sm p-6 flex flex-col gap-4">
+<h2 class="text-text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Fique por Dentro</h2>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-sm font-semibold text-text-primary">Campanha de Junho Vermelho na Paraíba</p>
+<p class="text-xs text-text-secondary">Estoques de sangue precisam da sua ajuda. Saiba mais sobre os postos de coleta.</p>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-sm font-semibold text-text-primary">Dicas de saúde pós-doação</p>
+<p class="text-xs text-text-secondary">Hidrate-se e evite esforços físicos nas próximas 12 horas.</p>
+</div>
+<a class="text-secondary font-semibold text-sm self-start mt-2 hover:underline" href="#">Ver todas as notícias</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
