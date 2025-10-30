@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Encontre um Hemocentro na Paraíba - Sangue Paraibano</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#E53935",
+            "secondary-blue": "#1E88E5",
+            "secondary-green": "#43A047",
+            "background-light": "#F5F5F5",
+            "background-dark": "#1a1a1a",
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#2a2a2a",
+            "text-light": "#424242",
+            "text-dark": "#e0e0e0",
+            "text-muted-light": "#757575",
+            "text-muted-dark": "#9e9e9e",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-20 flex w-full items-center justify-center border-b border-gray-200 dark:border-gray-700 bg-surface-light dark:bg-surface-dark/80 backdrop-blur-sm">
+<div class="flex w-full max-w-7xl items-center justify-between whitespace-nowrap px-6 py-3">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h4v2h-4v4h-2v-4H7v-2h4v-4z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Sangue Paraibano</h2>
+</div>
+<div class="hidden md:flex flex-1 items-center justify-end gap-8">
+<nav class="flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Início</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Como Doar</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Dúvidas</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-colors">
+<span class="truncate">Agende sua Doação</span>
+</button>
+</div>
+<button class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 h-[calc(100vh-65px)]">
+<!-- Sidebar -->
+<aside class="col-span-1 md:col-span-1 lg:col-span-4 xl:col-span-3 flex flex-col border-r border-gray-200 dark:border-gray-700 bg-surface-light dark:bg-surface-dark">
+<div class="p-6 border-b border-gray-200 dark:border-gray-700">
+<!-- Page Heading -->
+<h1 class="text-2xl lg:text-3xl font-black tracking-tight mb-4">Encontre um Hemocentro na Paraíba</h1>
+<!-- SearchBar -->
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted-light dark:text-text-muted-dark">search</span>
+<input class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark pl-10 pr-4 placeholder:text-text-muted-light placeholder:dark:text-text-muted-dark focus:ring-primary focus:border-primary" placeholder="Buscar por cidade..." type="text"/>
+</div>
+<!-- Chips/Filters -->
+<div class="flex gap-2 pt-4">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4">
+<p class="text-sm font-medium">Aberto agora</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4">
+<p class="text-sm font-medium">Tipo Sanguíneo</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Results List -->
+<div class="flex-grow overflow-y-auto">
+<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+<!-- Result Item 1 (Selected) -->
+<li class="p-4 cursor-pointer bg-primary/10 dark:bg-primary/20 border-l-4 border-primary">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-base font-bold text-text-light dark:text-text-dark">Hemocentro Coordenador de João Pessoa</p>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Av. Dom Pedro II, 1119 - Centro</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-green/20 px-2 py-0.5 text-xs font-medium text-secondary-green">
+<span class="size-1.5 rounded-full bg-secondary-green"></span>
+                      Aberto agora
+                    </span>
+</div>
+</div>
+</li>
+<!-- Result Item 2 -->
+<li class="p-4 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-base font-bold text-text-light dark:text-text-dark">Hemocentro Regional de Campina Grande</p>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">R. Profa. Eutécia Vital, 23 - Catolé</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1.5 rounded-full bg-primary/20 px-2 py-0.5 text-xs font-medium text-primary">
+<span class="size-1.5 rounded-full bg-primary"></span>
+                      Fechado
+                    </span>
+</div>
+</div>
+</li>
+<!-- Result Item 3 -->
+<li class="p-4 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<p class="text-base font-bold text-text-light dark:text-text-dark">Hemonúcleo de Patos</p>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">R. Cinco de Agosto, S/N - Belo Horizonte</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-green/20 px-2 py-0.5 text-xs font-medium text-secondary-green">
+<span class="size-1.5 rounded-full bg-secondary-green"></span>
+                      Abre às 07:00
+                    </span>
+</div>
+</div>
+</li>
+<!-- Details Card (shown when an item is selected) -->
+<li class="p-6 border-t-2 border-primary bg-background-light dark:bg-background-dark">
+<div class="flex flex-col gap-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Fachada do Hemocentro de João Pessoa" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE8LR3YQjzFMFmPFoEP-Pkrnfr8I_VBmLVMctlYoDTw9gnyVFDULGbm75tCRdRFSernpKHm5sMOy023ZHc9eXZS56LsbF2l0eLwJQjCyxU9rWP8gqlV80-Uk6U5t-xOfHS73rrbrwn0_B9sGiP1073NhlXuY_NmBUy3bUtl5KrE-qXJ6vb41GB2_6MV1JK2Nf2SWbdnJPVTiaWwCHjdrKHIlm8rtfq_ihbzfJOd0RElRh0iqPygdchHErfM6oDvsG5LDTQ4Ps7hqiP");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-xl font-bold">Hemocentro Coordenador de João Pessoa</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Av. Dom Pedro II, 1119 - Centro, João Pessoa - PB, 58013-420</p>
+</div>
+<div class="flex flex-col gap-3 text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary">call</span>
+<span>(83) 3218-7300</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary">mail</span>
+<span>contato@hemocentro.pb.gov.br</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg text-primary mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span>Segunda a Sexta: 07:00 - 17:30</span>
+<span>Sábado: 07:00 - 12:00</span>
+<span>Domingo: Fechado</span>
+</div>
+</div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-11 px-5 bg-secondary-blue text-white text-sm font-bold shadow-sm hover:bg-secondary-blue/90 transition-colors">
+<span class="material-symbols-outlined text-xl">assistant_navigation</span>
+<span class="truncate">Traçar Rota</span>
+</button>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+<!-- Map -->
+<section class="col-span-1 md:col-span-2 lg:col-span-8 xl:col-span-9 h-full w-full bg-gray-300 dark:bg-gray-900">
+<div class="h-full w-full bg-cover bg-center" data-alt="Mapa da Paraíba com pins marcando a localização dos hemocentros." data-location="mapa da paraíba" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzRdmdeKs6_EUvAKupJDttZwV5Bqo9KY9DEYXeCGz7w835vE5djs_XPRnpIR9XAWMj_nuiD9UZT-19-aBWbedpMdJA59uUOxEwvhn8xxq4-IRCt-eqyVjMnzfPxEyZRbgMzgYVh3SOKmD6fWBjX1Nd1bqaxjTcgI85FgoB2tScGfhibFIXB0Dzd2NipwEvhbu3oWfsnoKmmXOp4PuuVgD8VdtaCVLfWwJLH3kk5RwK8iazdbpT4CmAiELTZK8Ca6n3eCNx68huvNDw');">
+<!-- This div would contain the actual map component from a library like Google Maps or Leaflet -->
+</div>
+</section>
+</div>
+</main>
+</div>
+</body></html>
